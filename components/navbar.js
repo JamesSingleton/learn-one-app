@@ -4,7 +4,6 @@ import { useRouter } from 'next/router';
 import cn from 'classnames';
 import { SkipNavLink } from '@reach/skip-nav';
 
-import NextLogo from './logo';
 import Container from './container';
 import GitHubLogo from './icons/github';
 import Button from './button';
@@ -22,7 +21,7 @@ function Navbar() {
         <div className="mobile-top">
           <Link href="/">
             <a className="mobile-logo" title="Go to the homepage">
-              <NextLogo />
+              <img src="/static/images/one-app.png" style={{ height: 50 }} />
             </a>
           </Link>
 
@@ -34,7 +33,7 @@ function Navbar() {
         <div className="links">
           <Link href="/">
             <a className="logo">
-              <NextLogo />
+              <img src="/static/images/one-app.png" style={{ height: 50 }} />
             </a>
           </Link>
 
