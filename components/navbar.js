@@ -27,9 +27,7 @@ function Navbar() {
           </Link>
 
           <div className="learn">
-            <Button href="/learn/basics/create-nextjs-app?utm_source=next-site&utm_medium=homepage-cta&utm_campaign=next-website">
-              Learn
-            </Button>
+            <Button href="/learn/basics/create-one-app-module">Learn</Button>
           </div>
         </div>
 
@@ -91,9 +89,7 @@ function Navbar() {
           </a>
 
           <div className="learn">
-            <Button href="/learn/basics/create-nextjs-app?utm_source=next-site&utm_medium=homepage-cta&utm_campaign=next-website">
-              Learn
-            </Button>
+            <Button href="/learn/basics/create-one-app-module">Learn</Button>
           </div>
         </div>
       </nav>

@@ -12,7 +12,7 @@ export default function Learn() {
         description="Learn One App step-by-step and earn points ✨."
       />
       <div>
-        <Button href="/learn/basics/create-nextjs-app" invert>
+        <Button href="/learn/basics/create-one-app-module" invert>
           Get Started
         </Button>
       </div>

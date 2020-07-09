@@ -84,21 +84,16 @@ export default withPure(() => (
             <h4 className="fw5">More</h4>
             <p>
               <a
-                href="https://vercel.com/contact/sales?utm_source=next-site&utm_medium=footer&utm_campaign=next-website"
+                href="https://github.com/americanexpress/one-app"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Contact Sales
-              </a>
-            </p>
-            <p>
-              <a href="https://github.com/vercel/next.js" rel="noopener noreferrer" target="_blank">
                 GitHub
               </a>
             </p>
             <p>
               <a
-                href="https://github.com/vercel/next.js/releases"
+                href="https://github.com/americanexpress/one-app/releases"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -123,7 +118,11 @@ export default withPure(() => (
               </a>
             </p>
             <p>
-              <a href="https://github.com/vercel" rel="noopener noreferrer" target="_blank">
+              <a
+                href="https://github.com/americanexpress"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 GitHub
               </a>
             </p>

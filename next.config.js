@@ -16,7 +16,7 @@ const withGitHubMDX = nextMDX({
       [
         rehypeReadme,
         {
-          repo: 'vercel/next.js',
+          repo: 'JamesSingleton/learn-one-app',
           branch: 'master',
           level: 4
         }
@@ -164,11 +164,6 @@ const nextConfig = {
           source: '/docs/api{/}?',
           permanent: false,
           destination: '/docs/api-routes/introduction'
-        },
-        {
-          source: '/discussions',
-          destination: 'https://github.com/vercel/next.js/discussions',
-          permanent: false
         }
       ];
     }

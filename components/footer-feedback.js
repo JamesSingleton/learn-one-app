@@ -334,7 +334,7 @@ export default class FooterFeedback extends Component {
           <div className="learn">
             You can also ask the community on{' '}
             <a
-              href="https://github.com/vercel/next.js/discussions"
+              href="https://github.com/JamesSingleton/learn-one-app"
               target="_blank"
               rel="noopener noreferrer"
             >
