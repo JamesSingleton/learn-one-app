@@ -107,7 +107,6 @@ const nextConfig = {
         ...navigateBetweenPagesLessonsRedirect,
         ...apiRoutesLessonsRedirect,
         ...basicsLessonsRedirect,
-        ...typeScriptLessonsRedirect,
         {
           source: '/features{/}?',
           permanent: false,
