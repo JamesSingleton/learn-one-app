@@ -58,15 +58,9 @@ const apiRoutesLessonsRedirect = [
   destination: '/learn/basics/api-routes'
 }));
 
-const typeScriptLessonsRedirect = ['finally', 'home-page', 'page-types'].map(page => ({
-  source: `/learn/excel/typescript/${page}{/}?`,
-  permanent: true,
-  destination: '/learn/excel/typescript'
-}));
-
 const basicsLessonsRedirect = [].concat(
   ...[
-    ['getting-started', 'create-nextjs-app'],
+    ['getting-started', 'create-one-app-module'],
     ['using-shared-components', 'assets-metadata-css'],
     ['create-dynamic-pages', 'dynamic-routes'],
     ['server-side-support-for-clean-urls', 'dynamic-routes'],
@@ -85,26 +79,6 @@ const basicsLessonsRedirect = [].concat(
       source: `/learn/basics/${before}/:page{/}?`,
       permanent: true,
       destination: `/learn/basics/${after}`
-    }
-  ])
-);
-
-const excelLessonsRedirect = [].concat(
-  ...[
-    ['static-html-export', '/docs/advanced-features/static-html-export'],
-    ['amp', '/docs/advanced-features/amp-support/introduction'],
-    ['automatic-static-optimization', '/docs/advanced-features/automatic-static-optimization'],
-    ['automatic-prerendering', '/docs/advanced-features/automatic-static-optimization']
-  ].map(([before, after]) => [
-    {
-      source: `/learn/excel/${before}{/}?`,
-      permanent: true,
-      destination: after
-    },
-    {
-      source: `/learn/excel/${before}/:page{/}?`,
-      permanent: true,
-      destination: after
     }
   ])
 );
@@ -128,12 +102,11 @@ const nextConfig = {
         {
           source: '/learn{/}?',
           permanent: true,
-          destination: '/learn/basics/create-nextjs-app'
+          destination: '/learn/basics/create-one-app-module'
         },
         ...navigateBetweenPagesLessonsRedirect,
         ...apiRoutesLessonsRedirect,
         ...basicsLessonsRedirect,
-        ...excelLessonsRedirect,
         ...typeScriptLessonsRedirect,
         {
           source: '/features{/}?',

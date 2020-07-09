@@ -65,7 +65,7 @@ export default withPure(() => (
               <a href="/docs">Docs</a>
             </p>
             <p>
-              <Link href="/learn/basics/create-nextjs-app" prefetch={false}>
+              <Link href="/learn/basics/create-one-app-module" prefetch={false}>
                 <a>Learn</a>
               </Link>
             </p>
