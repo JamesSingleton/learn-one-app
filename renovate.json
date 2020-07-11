@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "config:base",
+    ":rebaseStalePrs",
+    ":automergeMinor",
+    ":separateMajorReleases",
+    ":enableVulnerabilityAlerts",
+    ":maintainLockFilesWeekly"
+  ],
+  "semanticCommitScope": "deps",
+  "stabilityDays": 1,
+  "prCreation": "status-success",
+  "rangeStrategy": "replace"
+}
