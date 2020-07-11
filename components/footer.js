@@ -62,21 +62,17 @@ export default withPure(() => (
           <div>
             <h4 className="fw5">General resources</h4>
             <p>
-              <a href="/docs">Docs</a>
+              <a
+                href="https://one-amex-docs.americanexpress.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Docs
+              </a>
             </p>
             <p>
               <Link href="/learn/basics/create-one-app-module" prefetch={false}>
                 <a>Learn</a>
-              </Link>
-            </p>
-            <p>
-              <Link href="/showcase" prefetch={false}>
-                <a>Showcase</a>
-              </Link>
-            </p>
-            <p>
-              <Link href="/blog" prefetch={false}>
-                <a>Blog</a>
               </Link>
             </p>
           </div>
@@ -100,20 +96,11 @@ export default withPure(() => (
                 Releases
               </a>
             </p>
-            <p>
-              <Link href="/telemetry" prefetch={false}>
-                <a>Telemetry</a>
-              </Link>
-            </p>
           </div>
           <div>
             <h4 className="fw5">About {ORG_NAME}</h4>
             <p>
-              <a
-                href={`${PLATFORM_URL}/oss?utm_source=next-site&utm_medium=footer&utm_campaign=next-website`}
-                rel="noopener noreferrer"
-                target="_blank"
-              >
+              <a href="https://americanexpress.io/" rel="noopener noreferrer" target="_blank">
                 Open Source Software
               </a>
             </p>
@@ -133,18 +120,6 @@ export default withPure(() => (
                 target="_blank"
               >
                 Twitter
-              </a>
-            </p>
-          </div>
-          <div>
-            <h4 className="fw5">Legal</h4>
-            <p>
-              <a
-                href={`${PLATFORM_URL}/legal/privacy-policy`}
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Privacy Policy
               </a>
             </p>
           </div>

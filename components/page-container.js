@@ -12,11 +12,11 @@ export default function PageContainer({ title, description, children, shouldInde
   return (
     <div>
       <Head>
-        <title>{title || `Next.js by ${ORG_NAME} - The React Framework`}</title>
+        <title>{title || `One App by ${ORG_NAME} - The React Framework`}</title>
         {description !== false && (
           <meta
             name="description"
-            content={description || `Next.js by ${ORG_NAME} is the React framework for production`}
+            content={description || `One App by ${ORG_NAME} is the React framework for production`}
           />
         )}
         {!shouldIndex && <meta name="robots" content="noindex" />}

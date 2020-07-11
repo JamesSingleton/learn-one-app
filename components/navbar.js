@@ -15,7 +15,7 @@ function Navbar() {
     <Container center>
       <SkipNavLink tabIndex="0" />
       <h1 className="visually-hidden" aria-hidden="true">
-        Next.js
+        One App
       </h1>
       <nav className="f-reset">
         <div className="mobile-top">
@@ -37,49 +37,20 @@ function Navbar() {
             </a>
           </Link>
 
-          <Link href="/showcase">
-            <a
-              className={cn('mute', {
-                selected: route.startsWith('/showcase')
-              })}
-              title="Showcase"
-            >
-              Showcase
-            </a>
-          </Link>
-
-          <Link href="/docs/[[...slug]]" as="/docs/getting-started">
-            <a
-              className={cn('mute', {
-                selected: route.startsWith('/docs')
-              })}
-              title="Documentation"
-            >
-              Docs
-            </a>
-          </Link>
-
-          <Link href="/blog">
-            <a
-              className={cn('mute', {
-                selected: route.startsWith('/blog')
-              })}
-            >
-              Blog
-            </a>
-          </Link>
-
           <a
-            className="mute"
-            href="https://vercel.com/solutions/nextjs?utm_source=next-site&utm_medium=navbar&utm_campaign=next-website"
-            target="_blank"
+            href="https://one-amex-docs.americanexpress.com/"
             rel="noopener noreferrer"
+            target="_blank"
+            className={cn('mute', {
+              selected: route.startsWith('/docs')
+            })}
+            title="Documentation"
           >
-            Enterprise
+            Docs
           </a>
           <a
-            href="https://github.com/vercel/next.js"
-            aria-label="Next.js on GitHub"
+            href="https://github.com/americanexpress/one-app"
+            aria-label="One App on GitHub"
             rel="noopener noreferrer"
             target="_blank"
             className="icon mute"

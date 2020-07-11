@@ -26,7 +26,7 @@ const withGitHubMDX = nextMDX({
 });
 
 const withMDX = nextMDX({
-  extension: /[/\\](pages|blog|telemetry|components[/\\](home))[/\\](.+)\.mdx?$/,
+  extension: /[/\\](pages|blog|components[/\\](home))[/\\](.+)\.mdx?$/,
   options: {
     hastPlugins: [rehypePrism]
   }
@@ -144,17 +144,6 @@ const nextConfig = {
     if (!dev && isServer) {
       // we're in build mode so enable shared caching for the GitHub API
       process.env.USE_CACHE = 'true';
-
-      const originalEntry = config.entry;
-
-      config.entry = async () => {
-        const entries = { ...(await originalEntry()) };
-
-        // These scripts can import components from the app and use ES modules
-        entries['./scripts/index-docs.js'] = './scripts/index-docs.js';
-
-        return entries;
-      };
     }
 
     return config;

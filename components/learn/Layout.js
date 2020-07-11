@@ -8,7 +8,6 @@ import Footer from '../footer';
 import PageContent from '../page-content';
 import Container from '../container';
 import SocialMeta from '../social-meta';
-import FooterFeedback from '../footer-feedback';
 import Navigation from './Navigation';
 import Lesson from './Lesson';
 import Markdown, { H2 } from './Markdown';
@@ -26,7 +25,7 @@ const Layout = ({ meta, children }) => {
         </Head>
       )}
       <Page
-        title={`${meta.subtitle ? `${meta.subtitle} - ` : ''}${meta.title} | Learn Next.js`}
+        title={`${meta.subtitle ? `${meta.subtitle} - ` : ''}${meta.title} | Learn One App`}
         sticky={!isMobile}
       >
         <PageContent>
@@ -45,7 +44,6 @@ const Layout = ({ meta, children }) => {
                     <Markdown>{children}</Markdown>
                   </Lesson>
                   <hr />
-                  <FooterFeedback learn />
                 </div>
               </RecordsProvider>
             </div>

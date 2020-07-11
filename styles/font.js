@@ -1,7 +1,5 @@
 import css from 'styled-jsx/css';
 
-// Use styled-jsx instead of global CSS because global CSS
-// does not work for AMP pages: https://github.com/vercel/next.js/issues/10549
 export default css.global`
   /* latin */
   @font-face {
