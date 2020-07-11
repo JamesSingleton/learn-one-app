@@ -4,57 +4,71 @@ import SectionHeader from '../section-header';
 
 export default function Features() {
   return (
-    <Container wide role="region" aria-labelledby="features">
+    <Container dark wide role="region" aria-labelledby="features">
       <Container center padding>
-        <SectionHeader id="features" title="Why One App" description="" />
+        <SectionHeader
+          id="features"
+          title="Why One App"
+          description="Our goal is to provide a web application framework for building fast, scalable, secure, and modular experiences."
+        />
         <div className="row">
           <div className="column">
-            <h3 className="f3 fw6">Pre-Rendering</h3>
+            <h3 className="f3 fw6">Micro-UI</h3>
             <p>
-              Statically generated and server-rendered React applications have never been easier.
+              Powered by{' '}
+              <a
+                href="https://one-amex-docs.americanexpress.com/en-us/holocron/api/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Holocron
+              </a>
+              {', '}
+              this allows for code splitting via independently developed, tested, and deployed
+              Modules.
             </p>
           </div>
           <div className="column">
-            <h3 className="f3 fw6">Static Exporting</h3>
+            <h3 className="f3 fw6">Flexibility</h3>
             <p>
-              No need to learn a new framework. Exporting a static site with Next.js is as easy as a
-              single command.
+              An omnichannel solution to UI. Whether you're performing server-side, client-side,
+              delivering modules as a service to web email or phone/IoT clients. One App covers this
+              for you.
             </p>
           </div>
           <div className="column">
-            <h3 className="f3 fw6">CSS-in-JS</h3>
+            <h3 className="f3 fw6">Security</h3>
             <p>
-              One App comes with <code>styled-jsx</code> included, but it also works with every
-              CSS-in-JS solution you know and love.
+              Configurable security settings, all pages are protected by a content security policy
+              and all modules are injected with sub-resource integrity.
             </p>
           </div>
         </div>
         <div className="row">
           <div className="column">
-            <h3 className="f3 fw6">Zero Configuration</h3>
+            <h3 className="f3 fw6">Scalability</h3>
             <p>
-              Automatic code splitting, filesystem based routing, hot code reloading and universal
-              rendering.
+              Wrapped within an application that scales across 1,000's of engineers and multiple
+              units of an enterprise website.
             </p>
-            <Button href="/learn/basics/create-nextjs-app">Learn Next.js</Button>
           </div>
           <div className="column">
-            <h3 className="f3 fw6">Fully Extensible</h3>
+            <h3 className="f3 fw6">Tooling</h3>
             <p>
-              Complete control over Babel and Webpack. Customizable server, routing and
-              next-plugins.
+              A suite of{' '}
+              <a
+                href="https://github.com/americanexpress/one-app-cli"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                CLI Tools
+              </a>{' '}
+              to help you with developing locally.
             </p>
-            <Button href="/docs" amp>
-              View Full Documentation
-            </Button>
           </div>
           <div className="column">
             <h3 className="f3 fw6">Ready for Production</h3>
-            <p>
-              Optimized for a smaller build size, faster dev compilation and dozens of other
-              improvements.
-            </p>
-            <Button href="/showcase">View Showcase</Button>
+            <p>Optimized for delivering performant, maintainable user experiences.</p>
           </div>
         </div>
         <style jsx>{`
