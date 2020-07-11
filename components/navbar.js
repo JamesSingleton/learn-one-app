@@ -21,7 +21,7 @@ function Navbar() {
         <div className="mobile-top">
           <Link href="/">
             <a className="mobile-logo" title="Go to the homepage">
-              <img src="/static/images/one-app.png" style={{ height: 50 }} />
+              <img src="/static/images/one-app.png" style={{ height: 50 }} alt="One App Logo" />
             </a>
           </Link>
 
@@ -33,7 +33,7 @@ function Navbar() {
         <div className="links">
           <Link href="/">
             <a className="logo">
-              <img src="/static/images/one-app.png" style={{ height: 50 }} />
+              <img src="/static/images/one-app.png" style={{ height: 50 }} alt="One App Logo" />
             </a>
           </Link>
 

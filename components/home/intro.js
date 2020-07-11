@@ -39,7 +39,7 @@ class LogoContainer extends React.PureComponent {
       <div className={classNames('logo-main f4 fw6', { unmounted: !mounted })}>
         <Link href="/">
           <a className={scroll >= LOGO_TOP ? null : 'disable'} aria-label="Next.js">
-            <img src="/static/images/one-app.png" style={{ height: 80 }} />
+            <img src="/static/images/one-app.png" style={{ height: 80 }} alt="One App Logo" />
           </a>
         </Link>
         <style jsx>{`
