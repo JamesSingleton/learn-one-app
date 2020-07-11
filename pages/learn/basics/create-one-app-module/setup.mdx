@@ -21,31 +21,32 @@ First, let’s make sure that your development environment is ready.
 
 ### Create a One App Module
 
-To create a One App Module, open your terminal, `cd` into the directory you’d like to create the app in, and run the following command:
+To create a One App Module, open your terminal, `cd` into the directory you’d like to create your module in, and run the following command:
 
 ```shell
-npm init next-app nextjs-blog --example "https://github.com/vercel/next-learn-starter/tree/master/learn-starter"
+npx -p yo -p @americanexpress/generator-one-app-module -- yo @americanexpress/one-app-module one-app-blog
 ```
 
-> Under the hood, this uses the tool called `create-next-app`, which bootstraps a Next.js app for you. It uses [this template](https://github.com/vercel/next-learn-starter/tree/master/learn-starter) through the `--example` flag.
->
-> If it doesn’t work, please take a look at [this page](https://github.com/vercel/next-learn-starter/blob/master/errors/install.md).
+Follow the prompts give. For the purpose of this tutorial, name the module `one-app-blog` and select root module when prompted.
+
+> Under the hood, this uses a tool called `yeoman`, which is used to bootstrap either a root module or a child module.
+
 
 ### Run the development server
 
-You now have a new directory called `nextjs-blog`. Let’s `cd` into it:
+You now have a new directory called `one-app-blog`. Let’s `cd` into it:
 
 ```shell
-cd nextjs-blog
+cd one-app-blog
 ```
 
 Then, run the following command:
 
 ```shell
-npm run dev
+npm start
 ```
 
-This starts your Next.js app’s "development server" (more on this later) on port **3000**.
+This starts your One App "development server" (more on this later) on port **3000**.
 
 Let’s check to see if it’s working. Open [http://localhost:3000](http://localhost:3000) from your browser.
 
