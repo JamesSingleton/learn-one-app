@@ -53,22 +53,25 @@ export default function Features() {
             </p>
           </div>
           <div className="column">
-            <h3 className="f3 fw6">Tooling</h3>
+            <h3 className="f3 fw6">Internationalization</h3>
             <p>
-              A suite of{' '}
+              One App allows you to easily setup{' '}
               <a
-                href="https://github.com/americanexpress/one-app-cli"
+                href="https://one-amex-docs.americanexpress.com/en-us/one-app/api/modules/internationalization"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                CLI Tools
+                internationalization
               </a>{' '}
-              to help you with developing locally.
+              within your application.
             </p>
           </div>
           <div className="column">
             <h3 className="f3 fw6">Ready for Production</h3>
-            <p>Optimized for delivering performant, maintainable user experiences.</p>
+            <p>
+              Optimized for delivering performant, maintainable user experiences with minimal
+              downtime.
+            </p>
           </div>
         </div>
         <style jsx>{`
