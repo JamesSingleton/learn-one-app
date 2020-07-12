@@ -21,8 +21,8 @@ export default function Learn() {
             oversize={false}
             margin={60}
             src="/static/images/learn.png"
-            width={1852 / 2}
-            height={990 / 2}
+            width={1145 / 2}
+            height={642 / 2}
           />
         </a>
       </Link>
