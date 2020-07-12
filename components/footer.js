@@ -71,7 +71,7 @@ export default withPure(() => (
               </a>
             </p>
             <p>
-              <Link href="/learn/basics/create-one-app-module" prefetch={false}>
+              <Link href="/learn/basics/create-a-module" prefetch={false}>
                 <a>Learn</a>
               </Link>
             </p>

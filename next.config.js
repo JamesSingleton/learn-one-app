@@ -60,7 +60,7 @@ const apiRoutesLessonsRedirect = [
 
 const basicsLessonsRedirect = [].concat(
   ...[
-    ['getting-started', 'create-one-app-module'],
+    ['getting-started', 'create-a-module'],
     ['using-shared-components', 'assets-metadata-css'],
     ['create-dynamic-pages', 'dynamic-routes'],
     ['server-side-support-for-clean-urls', 'dynamic-routes'],
@@ -102,7 +102,7 @@ const nextConfig = {
         {
           source: '/learn{/}?',
           permanent: true,
-          destination: '/learn/basics/create-one-app-module'
+          destination: '/learn/basics/create-a-module'
         },
         ...navigateBetweenPagesLessonsRedirect,
         ...apiRoutesLessonsRedirect,

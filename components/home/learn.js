@@ -13,7 +13,7 @@ export default function Learn() {
         title="Learn One App"
         description="Learn One App step-by-step and earn points ✨."
       />
-      <Link href="/learn/basics/create-one-app-module">
+      <Link href="/learn/basics/create-a-module">
         <a title="Get started learning One App">
           <Image
             shadow
@@ -27,7 +27,7 @@ export default function Learn() {
         </a>
       </Link>
       <div>
-        <Button href="/learn/basics/create-one-app-module" invert>
+        <Button href="/learn/basics/create-a-module" invert>
           Get Started
         </Button>
       </div>

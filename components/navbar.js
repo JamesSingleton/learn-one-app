@@ -26,7 +26,7 @@ function Navbar() {
           </Link>
 
           <div className="learn">
-            <Button href="/learn/basics/create-one-app-module">Learn</Button>
+            <Button href="/learn/basics/create-a-module">Learn</Button>
           </div>
         </div>
 
@@ -59,7 +59,7 @@ function Navbar() {
           </a>
 
           <div className="learn">
-            <Button href="/learn/basics/create-one-app-module">Learn</Button>
+            <Button href="/learn/basics/create-a-module">Learn</Button>
           </div>
         </div>
       </nav>

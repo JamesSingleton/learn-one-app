@@ -1,0 +1,38 @@
+import Layout from '../../../../components/learn/Layout'
+import Link from 'next/link'
+
+export const meta = {
+  title: 'Create a Module',
+  courseId: 'basics',
+  lessonId: 'create-a-module'
+}
+
+<p>
+  <img src="/static/images/one-app.png" style={{ height: 80 }} alt="One App Logo" />
+
+</p>
+
+To build a complete web application with React from scratch, there are many important details you need to consider:
+
+- Code has to be bundled using a bundler like webpack and transformed using a compiler like Babel.
+- You need to do production optimizations such as code splitting.
+- You might also want to use server-side rendering or client-side rendering.
+- You might have to localize your application.
+
+### One App: A fresh, modular take
+
+One App provides a solution to all of the above problems. But more importantly, it allows you and your team to successfully build a scalable React application.
+
+### About This Tutorial
+
+This free interactive course will guide you through how to get started with One App.
+
+In this tutorial, you’ll learn One App basics by creating a very simple One App application.
+
+Let’s get started!
+
+> This tutorial assumes basic knowledge of JavaScript and React. If you’ve never written React code, you should go through [the official React tutorial](https://reactjs.org/tutorial/tutorial.html) first.
+>
+> If you’re looking for the One App documentation instead, <a href="https://one-amex-docs.americanexpress.com/" rel="noopener noreferrer" target="_blank">click here</a>.
+
+export default ({ children }) => <Layout meta={meta}>{children}</Layout>
