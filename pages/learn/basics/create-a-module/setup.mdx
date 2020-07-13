@@ -7,14 +7,15 @@ export const meta = {
   stepId: 'setup',
   subtitle: 'Setup',
   question: {
-    answers: ['Welcome to Next.js!', 'Hello Next.js!'],
-    correctAnswer: 'Welcome to Next.js!'
+    answers: ['Welcome to One App!', 'Hello One App!'],
+    correctAnswer: 'Welcome to One App!'
   }
 }
 
 First, let’s make sure that your development environment is ready.
 
 - If you don’t have **Node.js** installed, [install it from here](https://nodejs.org/en/). You’ll need Node.js version **12.0.0** or later.
+- If you don't have **Docker** installed, [install it from here](https://www.docker.com/products/docker-desktop).
 - You’ll be using your own text editor and terminal app for this tutorial.
 
 > If you are on Windows, we recommend [downloading Git for Windows](https://gitforwindows.org/) and use Git Bash that comes with it, which supports the UNIX-specific commands in this tutorial.
@@ -24,19 +25,24 @@ First, let’s make sure that your development environment is ready.
 To create a One App Module, open your terminal, `cd` into the directory you’d like to create your module in, and run the following command:
 
 ```shell
-npx -p yo -p @americanexpress/generator-one-app-module -- yo @americanexpress/one-app-module one-app-blog
+npx -p yo -p @americanexpress/generator-one-app-module -- yo @americanexpress/one-app-module
 ```
 
-Follow the prompts give. For the purpose of this tutorial, name the module `one-app-blog` and select root module when prompted.
+Answer the prompts with the following answers:
+
+1. What is the name of your module: `one-app-root`
+2. Is this a root module or a child module: `root-module`
+3. Generate with Parrot Middleware: `no` (more on this later)
+4. Set up with internationalization: `no` (more on this later)
 
 > Under the hood, this uses a tool called `yeoman`, which is used to bootstrap either a root module or a child module.
 
 ### Run the development server
 
-You now have a new directory called `one-app-blog`. Let’s `cd` into it:
+You now have a new directory called `one-app-root`. Let’s `cd` into it:
 
 ```shell
-cd one-app-blog
+cd one-app-root
 ```
 
 Then, run the following command:
