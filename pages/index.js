@@ -14,7 +14,7 @@ export default function Index() {
       <SocialMeta
         image="/static/twitter-cards/home.jpg"
         title={`One App by ${ORG_NAME} - A fresh, modular take on web application development`}
-        url="https://learn-one-app.now.sh"
+        url="https://learn-one-app.vercel.app"
         description="A fresh, modular take on web application development"
       />
       <SkipNavContent />

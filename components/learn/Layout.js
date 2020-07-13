@@ -94,10 +94,10 @@ const Layout = ({ meta, children }) => {
           </Container>
         </PageContent>
         <SocialMeta
-          image="/static/twitter-cards/learn-twitter.png"
+          image="/static/images/learn.png"
           title="Learn | One App"
           url="https://learn-one-app.vercel.app/learn"
-          description={`Production grade React applications that scale. The world’s leading companies use One App by ${ORG_NAME} to build pre-rendered applications, static websites, and more.`}
+          description={`Enterprise grade React applications that scale.`}
         />
         <SkipNavContent />
         <Footer />
