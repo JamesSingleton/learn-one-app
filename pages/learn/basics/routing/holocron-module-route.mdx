@@ -1,0 +1,114 @@
+import Layout from '../../../../components/learn/Layout'
+
+export const meta = {
+  title: 'Routing',
+  courseId: 'basics',
+  lessonId: 'routing',
+  stepId: 'holocron-module-route',
+  question: {
+    answers: ['Hello child module!', 'Welcome to a child module!'],
+    correctAnswer: 'Welcome to a child module!'
+  }
+}
+
+For One App, [Holocron](https://one-amex-docs.americanexpress.com/en-us/holocron/api/) modules are a formal way of code-splitting for a modern, micro front-end in the One App ecosystem. Utilizing the [module map](https://one-amex-docs.americanexpress.com/en-us/one-app/api/server/module-map-schema) as a system which promotes synergy and asynchrony across teams and collaborators on a single application.
+
+With Holocron each individual module is by definition, a code split bundled component with language packs that can be combined and composed based on our needs. Each module is versioned, configurable, routable and can be further split into smaller chunks using dynamic importing
+
+### Create a new module
+
+In a new terminal, run the following command:
+
+```shell
+npx -p yo -p @americanexpress/generator-one-app-module -- yo @americanexpress/one-app-module
+```
+
+Answer the prompts with the following answers:
+
+- What is the name of your module: `one-app-child-module`
+- Is this a root module or a child module: `child-module`
+- Generate with Parrot Middleware: `no` (more on this later)
+- Set up with internationalization: `no` (more on this later)
+
+### Edit child module
+
+Open `one-app-child-module` in your text editor and open up `src/components/OneAppChildModule.jsx` and update it with the following contents:
+
+```jsx
+import React from 'react'
+
+const OneAppChildModule = () => (
+  <div>
+    <h1>Welcome to a child module!</h1>
+  </div>
+)
+
+export default OneAppChildModule
+```
+
+Then, run the following command to build your new module:
+
+```shell
+npm run build
+```
+
+### Add your new module to your root module
+
+Now lets add your newly created module into your root module (`one-app-root`).
+
+Open up your `package.json` and update it with the following content:
+
+```json
+"one-amex": {
+  "runner": {
+    "modules": [
+      ".",
+      "../one-app-child-module"
+    ],
+    "rootModuleName": "one-app-root",
+    "dockerImage": "oneamex/one-app-dev:latest"
+  }
+}
+```
+
+> The above assumes that you added `one-app-child-module` in the same parent directory as `one-app-root`. If you did not, just update it with the relative path to where you created `one-app-child-module`.
+
+Run the following command to install `holocron-module-route`:
+
+```shell
+npm install -S holocron-module-route
+```
+
+Open up `src/childRoutes.jsx` within `one-app-root` and update it with the following content:
+
+```jsx
+import React from 'react'
+import { Route } from '@americanexpress/one-app-router'
+import ModuleRoute from 'holocron-module-route'
+import FirstRoute from './components/FirstRoute'
+
+const childRoutes = () => [
+  <Route path="/first-route" component={FirstRoute} />,
+  <ModuleRoute path="/child-module" moduleName="one-app-child-module" />
+]
+
+export default childRoutes
+```
+
+Build your root module:
+
+```shell
+npm run build
+```
+
+Start your root module:
+
+```shell
+npm start
+```
+
+Now, make sure that the development server is running and visit [http://localhost:3000/child-module](http://localhost:3000/child-module).
+
+**Question**: What text do you see on the page?
+
+export default ({ children }) => <Layout meta={meta}>{children}</Layout>

@@ -1,4 +1,5 @@
 import Layout from '../../../../components/learn/Layout'
+import Image from '../../../../components/image'
 
 export const meta = {
   title: 'Routing',
@@ -7,6 +8,55 @@ export const meta = {
   stepId: 'one-app-router'
 }
 
-### One App Router
+One App uses [@americanexpress/one-app-router](https://github.com/americanexpress/one-app-router), a fork of [react-router@3](https://github.com/ReactTraining/react-router/tree/v3) uplifted to work with React@^17, for its client and server side routing.
+
+### Create a New Route
+
+First lets create a component under the components folder called `first-route.jsx` with the following contents:
+
+```jsx
+import React from 'react'
+
+export default function FirstRoute() {
+  return <h1>First Route</h1>
+}
+```
+
+Now lets open your `childRoutes.jsx` and update it with the following contents:
+
+```jsx
+import React from 'react'
+import { Route } from '@americanexpress/one-app-router'
+import FirstRoute from './components/FirstRoute'
+
+const childRoutes = () => [<Route path="/first-route" component={FirstRoute} />]
+
+export default childRoutes
+```
+
+Now lets open your `OneAppRoot.jsx` and update it with the following contents:
+
+```jsx
+const OneAppRoot = ({ children }) => <div>{children}</div>
+```
+
+Now, make sure that the development server is running and visit [http://localhost:3000/first-route](http://localhost:3000/first-route). You should see the page:
+
+<Image
+  shadow
+  alt="First Post"
+  oversize={false}
+  src="/static/images/learn/routing/first-route.png"
+  width={516 / 2}
+  height={213 / 2}
+/>
+
+This is how you can create different pages in One App.
+
+Simply create a JSX file and add it to your `childRoutes.jsx`.
+
+In a way, this is similar to building websites using HTML or PHP files. Instead of writing HTML you write JSX and use React Components.
+
+Now lets see how to route between two different modules.
 
 export default ({ children }) => <Layout meta={meta}>{children}</Layout>
