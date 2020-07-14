@@ -97,7 +97,10 @@ export default function Intro() {
             </h2>
             <div className="main-button">
               <div className="button-spacer">
-                <Button href="/learn/basics/create-a-module" invert>
+                <Button
+                  href="/learn/basics/create-a-module?utm_source=learn-one-app-site&utm_medium=homepage-cta&utm_campaign=learn-one-app-website"
+                  invert
+                >
                   Start Learning
                 </Button>
               </div>
