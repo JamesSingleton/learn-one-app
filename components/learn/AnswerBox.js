@@ -76,7 +76,7 @@ const Symbol = ({ correct, selected }) => {
 
   return (
     <span>
-      {correct ? <CheckIcon color="#0070f3" /> : <CrossIcon color="#e00" />}
+      {correct ? <CheckIcon color="#006fcf" /> : <CrossIcon color="#e00" />}
       <style jsx>{`
         span {
           display: inline-block;
@@ -111,7 +111,7 @@ const AnswerResultMessage = ({ answer, correctAnswer }) => (
     )}
     <style jsx>{`
       .correct-message {
-        color: #0070f3;
+        color: #006fcf;
       }
       .incorrect-message {
         color: #e00;

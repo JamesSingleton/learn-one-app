@@ -49,7 +49,7 @@ class LogoContainer extends React.PureComponent {
           .logo-main {
             display: flex;
             justify-content: center;
-            color: #0070f3;
+            color: #006fcf;
             left: 0;
             right: 0;
             width: 200px;
@@ -66,7 +66,7 @@ class LogoContainer extends React.PureComponent {
             opacity: 0;
           }
           a.version {
-            color: #0070f3;
+            color: #006fcf;
           }
           .version .tip {
             color: #111;
@@ -176,7 +176,7 @@ export default function Intro() {
         .logo-main {
           display: flex;
           justify-content: center;
-          color: #0070f3;
+          color: #006fcf;
           margin: auto;
           margin-bottom: 2rem;
         }

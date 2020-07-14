@@ -82,7 +82,7 @@ export default css.global`
   :root {
     --geist-success-lighter: #d3e5ff;
     --geist-success-light: #3291ff;
-    --geist-success: #0070f3;
+    --geist-success: #006fcf;
     --geist-success-dark: #0761d1;
 
     --geist-error-lighter: #f7d4d6;

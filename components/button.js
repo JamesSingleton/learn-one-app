@@ -16,7 +16,7 @@ const cachedStyles = css`
     padding: 0.25rem 0.5rem;
     margin: -0.25rem -0.5rem;
     border-radius: 7px;
-    color: #0070f3;
+    color: #006fcf;
     background-color: transparent;
     border: none;
     font-size: inherit;
@@ -25,7 +25,7 @@ const cachedStyles = css`
     outline: none;
   }
   .btn:hover {
-    color: #0070f3;
+    color: #006fcf;
     background: rgba(0, 118, 255, 0.1);
   }
   .btn.invert {
@@ -34,7 +34,7 @@ const cachedStyles = css`
     height: 2.81rem;
     line-height: 2.8rem;
     border-radius: 7px;
-    background-color: #0070f3;
+    background-color: #006fcf;
     box-shadow: 0 4px 14px 0 rgba(0, 118, 255, 0.39);
     color: white;
   }

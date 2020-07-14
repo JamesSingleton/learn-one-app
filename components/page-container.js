@@ -62,7 +62,7 @@ export default function PageContainer({ title, description, children, shouldInde
             color: #111;
           }
           ::selection {
-            background-color: #0070f3;
+            background-color: #006fcf;
             color: #fff;
           }
           [role='grid']:focus {

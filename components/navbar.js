@@ -91,8 +91,8 @@ function Navbar() {
           color: #000;
         }
         .links a.selected {
-          color: #0070f3;
-          text-shadow: 0px 0px 1px #0070f3;
+          color: #006fcf;
+          text-shadow: 0px 0px 1px #006fcf;
         }
         .links a:first-child,
         .links a:last-child {
