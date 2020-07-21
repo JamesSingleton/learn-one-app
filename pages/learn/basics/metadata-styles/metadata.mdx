@@ -1,0 +1,34 @@
+import Layout from '../../../../components/learn/Layout'
+
+export const meta = {
+  title: 'Metadata and CSS',
+  courseId: 'basics',
+  lessonId: 'metadata-styles',
+  stepId: 'metadata',
+  subtitle: 'Metadata'
+}
+
+What if we wanted to modify the metadata of the page, such as the `<title>` HTML tag?
+
+`<title>` is part of the `<head>` HTML tag, so let's dive into how we can modify the `<head>` tag in One App.
+
+Within your root module install `react-helmet` and include it in your `.jsx` file:
+
+```jsx
+import Helmet from 'react-helmet'
+```
+
+```jsx
+export const OneAppRoot = ({ children }) => {
+  return (
+    <Fragment>
+      <Helmet title="One App" />
+      {children}
+    </Fragment>
+  )
+}
+```
+
+Try accessing [http://localhost:3000/first-route](http://localhost:3000/first-route). The browser tab should now say “One App”. By using your browser’s developer tools, you should see that the `title` tag is added to `<head>`.
+
+export default ({ children }) => <Layout meta={meta}>{children}</Layout>

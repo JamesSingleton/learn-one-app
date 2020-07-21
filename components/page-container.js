@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Router from 'next/router';
 // import { trackPageview } from '../lib/analytics';
-import { ORG_NAME } from '../lib/constants';
 import { FONT_FAMILY_SANS } from './css-config';
 
 // Router.events.on('routeChangeComplete', url => {
@@ -12,11 +11,11 @@ export default function PageContainer({ title, description, children, shouldInde
   return (
     <div>
       <Head>
-        <title>{title || `One App by ${ORG_NAME} - The React Framework`}</title>
+        <title>{title || `One App - The React Framework`}</title>
         {description !== false && (
           <meta
             name="description"
-            content={description || `One App by ${ORG_NAME} is the React framework for production`}
+            content={description || `One App is the React framework for production`}
           />
         )}
         {!shouldIndex && <meta name="robots" content="noindex" />}

@@ -1,0 +1,56 @@
+import Layout from '../../../../components/learn/Layout'
+import Image from '../../../../components/image'
+
+export const meta = {
+  title: 'Metadata and CSS',
+  courseId: 'basics',
+  lessonId: 'metadata-styles',
+  stepId: 'global-styles',
+  subtitle: 'Global Styles'
+}
+
+CSS Modules are useful for component-level styles. But if you want to load some CSS to be loaded by **every page**, One App has support for that as well.
+
+### Adding Global CSS
+
+You can place the global CSS file anywhere and use any name. So let’s do the following:
+
+- Create a top-level `styles` directory and create `global.css` inside.
+- Add the following content. It resets some styles and changes the color of the `a` tag.
+
+```css
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira
+      Sans, Droid Sans, Helvetica Neue, sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+```
+
+To summarize what we’ve learned so far:
+
+- To use CSS Modules, import a SCSS file from any component.
+- How to implement global CSS.
+
+export default ({ children }) => <Layout meta={meta}>{children}</Layout>

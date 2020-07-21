@@ -10,10 +10,10 @@ import { ORG_NAME } from '../lib/constants';
 
 export default function Index() {
   return (
-    <Page title={`One App by ${ORG_NAME} - A fresh, modular take on web application development`}>
+    <Page title={`One App - A fresh, modular take on web application development`}>
       <SocialMeta
         image="/static/twitter-cards/home.png"
-        title={`One App by ${ORG_NAME} - A fresh, modular take on web application development`}
+        title={`One App - A fresh, modular take on web application development`}
         url="https://learn-one-app.vercel.app"
         description="A fresh, modular take on web application development"
       />

@@ -1,0 +1,24 @@
+import Layout from '../../../../components/learn/Layout'
+import Link from 'next/link'
+
+export const meta = {
+  title: 'Metadata and Styles',
+  courseId: 'basics',
+  lessonId: 'metadata-styles'
+}
+
+Both the first route we added as well as the second (child) module we added currently do not have any styling. Let's add some CSS to style them.
+
+Since CSS is global, One App uses the [CSS Modules](https://github.com/css-modules/css-modules) pattern to avoid class name collisions.
+
+### What You’ll Learn in This Lesson
+
+In this lesson, you'll learn:
+
+- How to add global CSS to your `root-module`.
+- How to implement CSS Modules within your modules.
+- How to customize what goes inside the `<head>` using [react-helmet](https://github.com/nfl/react-helmet).
+
+> If you’re looking for detailed documentation on One App styling, take a look <a href="https://one-amex-docs.americanexpress.com/en-us/one-app/recipes/adding-styles" target="_blank" rel="noopener noreferrer">at the adding styles documentation</a>.
+
+export default ({ children }) => <Layout meta={meta}>{children}</Layout>
