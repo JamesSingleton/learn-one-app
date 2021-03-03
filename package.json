@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/JamesSingleton/learn-one-app#readme",
   "dependencies": {
-    "@mapbox/rehype-prism": "^0.5.0",
+    "@mapbox/rehype-prism": "^0.6.0",
     "@mdx-js/loader": "0.20.3",
     "@mdx-js/mdx": "0.20.3",
     "@mdx-js/tag": "^0.20.3",
