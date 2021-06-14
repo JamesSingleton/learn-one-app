@@ -673,9 +673,9 @@ ajv@^8.0.1:
     uri-js "^4.2.2"
 
 algoliasearch-helper@^3.4.3:
-  version "3.4.5"
-  resolved "https://registry.yarnpkg.com/algoliasearch-helper/-/algoliasearch-helper-3.4.5.tgz#f907494cf7057f9fc4f91e7dee9a40fee789ac5c"
-  integrity sha512-CrVoQE1i7jL1vmTx7Eus+ZS+f4gYUzGbswi2GR26xUtS9kVjjiZZVBaIXmCQJIV/NJIH1GJoJ3GoM6CKDabcRg==
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/algoliasearch-helper/-/algoliasearch-helper-3.5.1.tgz#a0ae61d9be4d965737098938d544a7477d72f1fe"
+  integrity sha512-8Te68As4GGldxEPpF80aJpKYEJxx1X8xSvxHJ094F8NWQ9OKkY0Jv5wRcHcbAdGwbZTPcE8Z/yKtCFqgVBAu6A==
   dependencies:
     events "^1.1.1"
 
